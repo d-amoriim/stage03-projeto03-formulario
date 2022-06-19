@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    text-decoration: none;
+
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+body::before {
+    content: '';
+
+    width: 100%;
+    height: 36rem;
+
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+
+    background-color: var(--preto-fundo);
+}
+
+/**/
+
+.global_box {
+    width: 100%;
+    max-width: 73rem;
+
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Header */
+.header_wrapper {
+    width: 100%;
+    max-width: 32rem;
+
+    margin: 7.4rem 0 0;
+}
+
+.header_wrapper h1 {
+    font-weight: bold;
+    font-family: 'Archivo';
+
+    color: var(--branco);
+}
+
+.header_wrapper p {
+
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+
+    color: var(--azul-principal);
+}
+
+/* Main -> Form */
+.form_wrapper {
+    min-height: 30rem;
+    margin: 3.8rem 0 0;
+    padding: 6.4rem;
+
+    border-radius: 0.8rem 0.8rem 0 0;
+    background-color: var(--cor-formulario);
+    box-shadow: 5px 2px 42px 7px rgba(0,0,0,0.15);
+}
+.fildset-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+/* Input wrapper */
+.input_wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Form texts and inputs */
+.form_text_legend {
+    font-family: 'Archivo';
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+    
+    width: 100%;
+    padding: 0 0 1.6rem 0;
+
+    color: var(--preto-legend);
+    border-bottom: 1px solid var(--cor-borda);
+}
+
+.form_text_label {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+
+    width: max-content;
+    margin-bottom: 0.8rem;
+    color: var(--preto-principal);
+}
+
+.form_text_span_label {
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 2.0rem;
+    
+    margin-left: 1.2rem;
+    color: var(--cinza-principal);
+    
+    transition: .3s;
+}
+.form_text_span_label:hover {
+    color: var(--cinza-secundario);
+}
+
+.form_input {
+    height: 5.6rem;
+    padding: 0 2.0rem 0;
+    
+    border-radius: 0.8rem;
+    border: 1px solid var(--cor-borda);
+
+    transition: .3s;
+    outline: none;
+    background-color: transparent;
+    box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.1)
+}
+
+.form_textarea {
+    padding: 2rem;
+    min-height: 16rem;
+    max-height: 25rem;
+    max-width: 605px;
+    min-width: 100%;
+    
+    border-radius: 0.8rem;
+    border: 0.1rem solid var(--cor-borda);
+    box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.1);
+    
+    transition: .3s;
+    background: transparent;
+    outline: none;
+}
+.form_select {
+    color: var(--cinza-principal);
+    margin-bottom: 4.8rem;
+}
+.form_input:hover, .form_textarea:hover {
+    background-color: #dadada94;
+}
+.form_input::placeholder, .form_textarea::placeholder {
+    color: var(--cinza-principal);
+}
+.form_input:focus, .form_textarea:focus {
+    font-weight: bold;
+
+    background-color: #dadada94;
+    border: 1px solid var(--cor-legend);
+}
