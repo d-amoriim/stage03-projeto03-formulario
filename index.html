@@ -2,94 +2,115 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <title>Projeto 03</title>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Poppins&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./css/variables.css">
-    <link rel="stylesheet" href="./css/style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<title>Projeto 03</title>
+	<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Poppins&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="./css/variables.css">
+	<link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <div class="global_box">
+	<div class="global_box">
 
-        <header class="header_wrapper">
-            <h1>Crie e compartilhe seu evento.</h1>
-            <p>O primeiro passo, é preencher esse formulário de inscrição.</p>
-        </header>
+		<header class="header_wrapper">
+			<h1>Crie e compartilhe seu evento.</h1>
+			<p>O primeiro passo, é preencher esse formulário de inscrição.</p>
+		</header>
 
-        <main>
-            <form class="form_wrapper" action="" method="">
-                <!--Seção Informações do Evento-->
-                <fieldset>
-                    <div class="fildset-wrapper">
-                        <legend class="form_text_legend">Informações do Evento</legend>
+		<main>
+			<form class="form_wrapper" action="" method="">
+				<!--Seção Informações do Evento-->
+				<fieldset>
+					<div class="fildset-wrapper">
+						<legend class="form_text_legend">Informações do Evento</legend>
 
-                        <div class="input_wrapper">
-                            <label class="form_text_label" for="event-tittle">
-                                Título do evento<span class="form_text_span_label">(mínimo 8 caracteres)
-                                </span>
-                            </label>
-                            <input class="form_input" type="text" id="event-tittle" autofocus>
-                        </div>
-                        <div class="input_wrapper">
-                            <label class="form_text_label" for="event-link">
-                                Link do evento<span class="form_text_span_label">(comece com https://)
-                                </span>
-                            </label>
-                            <input class="form_input" type="url" id="event-link" placeholder="https://">
-                        </div>
-                        <div class="input_wrapper">
-                            <label class="form_text_label" for="event-contact">
-                                Whatsapp para contato<span class="form_text_span_label">(somente números)
-                                </span>
-                            </label>
-                            <input class="form_input" type="number" id="event-contact" placeholder="(DDD) 90000-0000">
-                        </div>
-                        <div class="input_wrapper">
-                            <label class="form_text_label" for="event-more">Informações extras</label>
-                            <textarea class="form_textarea" type="text" id="event-more" placeholder="..."></textarea>
-                        </div>
-                        <div class="input_wrapper">
-                            <label class="form_text_label" for="event-category">Categoria</label>
-                            <select class="form_input form_select" id="event-category">
-                                <option value="" disabled selected>Escolha a categoria</option>
-                                <option value="1">Evento #</option>
-                                <option value="2">Evento #</option>
-                                <option value="3">Evento #</option>
-                                <option value="4">Evento #</option>
-                            </select>
-                        </div>
-                    </div>
-                </fieldset>
-                <!--Seção Privacidade-->
-                <fieldset>
-                    <div class="fildset-wrapper">
-                        <legend class="form_text_legend">Privacidade</legend>
+						<div class="input_wrapper">
+							<label class="form_text_label" for="event-tittle">
+								Título do evento<span class="form_text_span_label">(mínimo 8 caracteres)
+								</span>
+							</label>
+							<input class="form_input" type="text" id="event-tittle" autofocus>
+						</div>
+						<div class="input_wrapper">
+							<label class="form_text_label" for="event-link">
+								Link do evento<span class="form_text_span_label">(comece com https://)
+								</span>
+							</label>
+							<input class="form_input form_input_svglink" type="url" id="event-link" placeholder="https://">
+						</div>
+						<div class="input_wrapper">
+							<label class="form_text_label" for="event-contact">
+								Whatsapp para contato<span class="form_text_span_label">(somente números)
+								</span>
+							</label>
+							<input class="form_input form_input_svgcontact" type="number" id="event-contact"
+								placeholder="(DDD) 90000-0000">
+						</div>
+						<div class="input_wrapper">
+							<label class="form_text_label" for="event-more">Informações extras</label>
+							<textarea class="form_textarea" type="text" id="event-more" placeholder="..."></textarea>
+						</div>
+						<div class="input_wrapper">
+							<label class="form_text_label" for="event-category">Categoria</label>
+							<select class="form_input form_select" id="event-category">
+								<option value="" disabled selected>Escolha a categoria</option>
+								<option value="1">Evento #</option>
+								<option value="2">Evento #</option>
+								<option value="3">Evento #</option>
+								<option value="4">Evento #</option>
+							</select>
+						</div>
+					</div>
+				</fieldset>
+				<!--Seção Privacidade-->
+				<fieldset>
+					<div class="fildset-wrapper">
+						<legend class="form_text_legend">Privacidade</legend>
 
-                        <div class="input_wrapper">
-                            <label class="form_text_label" for="admin-email">
-                                E-mail do administrador<span class="form_text_span_label">(digite um email válido)
-                                </span>
-                            </label>
-                            <input class="form_input" type="email" id="admin-email" placeholder="admin@email.com">
-                        </div>
-                        <div class="input_wrapper">
-                            <label class="form_text_label" for="access_password">
-                                Senha de acesso para os participantes<span class="form_text_span_label">(mínimo 8 caracteres)
-                                </span>
-                            </label>
-                            <input class="form_input" type="password" id="access_password" minlength="8" maxlength="24" placeholder="***">
-                        </div>
-                    </div>
-                </fieldset>
-
-            </form>
-        </main>
-    </div>
+						<div class="input_wrapper">
+							<label class="form_text_label" for="admin-email">
+								E-mail do administrador<span class="form_text_span_label">(digite um email válido)
+								</span>
+							</label>
+							<input class="form_input form_input_svgemail" type="email" id="admin-email" placeholder="admin@email.com">
+						</div>
+						<div class="input_wrapper">
+							<label class="form_text_label" for="access_password">
+								Senha de acesso para os participantes<span class="form_text_span_label">(mínimo 8 caracteres)
+								</span>
+							</label>
+							<input class="form_input form_input_svgpass" type="password" id="access_password" minlength="8"
+								maxlength="24" placeholder="***">
+						</div>
+					</div>
+				</fieldset>
+				<!--Seção Dia/Hora-->
+				<fieldset>
+					<div class="fildset-wrapper">
+						<legend class="form_text_legend">Dia e hora</legend>
+						<div class="3-col">
+							<div class="input_wrapper">
+								<label class="form_text_label" for="event-date">Data</label>
+								<input class="form_input" type="date" id="event-date">
+							</div>
+							<div class="input_wrapper">
+								<label class="form_text_label" for="event-date">Das</label>
+								<input class="form_input" type="time" id="event-date">
+							</div>
+							<div class="input_wrapper">
+								<label class="form_text_label" for="event-date">Até</label>
+								<input class="form_input" type="time" id="event-date">
+							</div>
+						</div>
+					</div>
+				</fieldset>
+			</form>
+		</main>
+	</div>
 </body>
 
 </html>
