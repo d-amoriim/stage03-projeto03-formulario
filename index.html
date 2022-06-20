@@ -15,12 +15,10 @@
 
 <body>
 	<div class="global_box">
-
 		<header class="header_wrapper">
 			<h1>Crie e compartilhe seu evento.</h1>
 			<p>O primeiro passo, é preencher esse formulário de inscrição.</p>
 		</header>
-
 		<main>
 			<form class="form_wrapper" action="" method="">
 				<!--Seção Informações do Evento-->
@@ -40,7 +38,8 @@
 								Link do evento<span class="form_text_span_label">(comece com https://)
 								</span>
 							</label>
-							<input class="form_input form_input_svglink" type="url" id="event-link" placeholder="https://">
+							<input class="form_input form_input_svglink" type="url" id="event-link"
+								placeholder="https://">
 						</div>
 						<div class="input_wrapper">
 							<label class="form_text_label" for="event-contact">
@@ -76,15 +75,21 @@
 								E-mail do administrador<span class="form_text_span_label">(digite um email válido)
 								</span>
 							</label>
-							<input class="form_input form_input_svgemail" type="email" id="admin-email" placeholder="admin@email.com">
+							<input class="form_input form_input_svgemail" type="email" id="admin-email"
+								placeholder="admin@email.com">
 						</div>
 						<div class="input_wrapper">
 							<label class="form_text_label" for="access_password">
-								Senha de acesso para os participantes<span class="form_text_span_label">(mínimo 8 caracteres)
+								Senha de acesso para os participantes<span class="form_text_span_label">(mínimo 8
+									caracteres)
 								</span>
 							</label>
-							<input class="form_input form_input_svgpass" type="password" id="access_password" minlength="8"
-								maxlength="24" placeholder="***">
+							<input class="form_input form_input_svgpass" type="password" id="access_password"
+								minlength="8" maxlength="24" placeholder="***">
+						</div>
+						<div class="checkbox_wrapper">
+							<input type="checkbox" id="event_private">
+							<label class="form_text_label" for="event_private">Evento privado</label>
 						</div>
 					</div>
 				</fieldset>
@@ -92,7 +97,7 @@
 				<fieldset>
 					<div class="fildset-wrapper">
 						<legend class="form_text_legend">Dia e hora</legend>
-						<div class="3-col">
+						<div class="scheduling_wrapper">
 							<div class="input_wrapper">
 								<label class="form_text_label" for="event-date">Data</label>
 								<input class="form_input" type="date" id="event-date">
@@ -109,6 +114,14 @@
 					</div>
 				</fieldset>
 			</form>
+			<!--Submit-->
+			<div class="buttons_box">
+				<input class="form_button" type="submit" value="Salvar evento">
+			</div>
+			<footer>
+				<p>Desenvolvido para estudo</p>
+				<a href="https://github.com/d-amoriim" target="_blank">@Github</a>
+			</footer>
 		</main>
 	</div>
 </body>
